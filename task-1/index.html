@@ -1,1 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHADOW CLOUD MINING</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        
+    <header>
+        <h2>Cloud Mining</h2>
+        <div>
+            <h3 style="cursor:pointer;" id="home_page">Home</h3>
+            <a id="order_page">🛒<span id="count_item" style="color: snow; background-color: crimson; border-radius: 15px; font-size: 15px; width: 20px; position: relative; bottom: 40px; left: 18px;">0</span></a>
+        </div>
+    </header>
 
+    <div class="prices">
+
+        <!-- ACTIVE BOX -->
+        <div class="checkbox-container box_parent" style="top: -100px;">
+        
+            <input class="holo-checkbox-input" id="holo-check" type="checkbox">
+            <label class="holo-checkbox" for="holo-check">
+                <div class="holo-box">
+                <div class="holo-inner"></div>
+                <div class="scan-effect"></div>
+                <div class="holo-particles">
+                    <div class="holo-particle"></div>
+                    <div class="holo-particle"></div>
+                    <div class="holo-particle"></div>
+                    <div class="holo-particle"></div>
+                    <div class="holo-particle"></div>
+                    <div class="holo-particle"></div>
+                </div>
+
+                <div class="activation-rings">
+                    <div class="activation-ring"></div>
+                    <div class="activation-ring"></div>
+                    <div class="activation-ring"></div>
+                </div>
+
+                <div class="cube-transform">
+                    <div class="cube-face"></div>
+                    <div class="cube-face"></div>
+                    <div class="cube-face"></div>
+                    <div class="cube-face"></div>
+                    <div class="cube-face"></div>
+                    <div class="cube-face"></div>
+                </div>
+                </div>
+
+                <div class="corner-accent"></div>
+                <div class="corner-accent"></div>
+                <div class="corner-accent"></div>
+                <div class="corner-accent"></div>
+
+                <div class="holo-glow"></div>
+            </label>
+
+            <div class="status-text"></div>
+
+            <div class="frequency-spectrum">
+                <div class="frequency-bar"></div>
+                <div class="frequency-bar"></div>
+                <div class="frequency-bar"></div>
+                <div class="frequency-bar"></div>
+                <div class="frequency-bar"></div>
+                <div class="frequency-bar"></div>
+                <div class="frequency-bar"></div>
+                <div class="frequency-bar"></div>
+                <div class="frequency-bar"></div>
+                <div class="frequency-bar"></div>
+                <div class="frequency-bar"></div>
+                <div class="frequency-bar"></div>
+                <div class="frequency-bar"></div>
+                <div class="frequency-bar"></div>
+                <div class="frequency-bar"></div>
+                <div class="frequency-bar"></div>
+                <div class="frequency-bar"></div>
+                <div class="frequency-bar"></div>
+                <div class="frequency-bar"></div>
+                <div class="frequency-bar"></div>
+            </div>
+
+            <div class="data-chips" style="top: 280px; left: 70px;">
+                <div class="data-chip" style="font-size: 15px;">Average Hashrate: 5600 Kh/s</div>
+                <br><br>
+                <div class="data-chip" style="font-size: 15px;">Elapsed Times: 3 Months</div>
+                <br><br>
+                <div class="data-chip" style="font-size: 15px;">Minner ID: 0x7A2C8B9F</div>
+            </div>
+            
+        </div>
+
+            <div style="height: 100vh; width: 5px; background-color: rgb(0, 157, 255); box-shadow: 0px 0px 10px #aaa;"></div>
+
+            <nav class="price">
+                <img src="images/image1.jpg" alt="error">
+                <label for="img1">
+                    <p><span>1000 Kh/s</span><span>3 Months</span></p>
+                    <p>1 USDT</p>
+                </label>
+                <button class="add_to_cart" data-no="1" data-hash_rate="1000" data-amout="1">Add to Cart</button>
+            </nav>
+            <nav class="price">
+                <img src="images/image2.jpg" alt="error">
+                <label for="img2">
+                    <p><span>3000 Kh/s</span><span>3 Months</span></p>
+                    <p>2.5 USDT</p>
+                </label>
+                <button class="add_to_cart" data-no="2" data-hash_rate="3000" data-amout="2.5">Add to Cart</button>
+            </nav>
+            <nav class="price">
+                <img src="images/image3.jpg" alt="error">
+                <label for="img3">
+                    <p><span>5000 Kh/s</span><span>3 Months</span></p>
+                    <p>5 USDT</p>
+                </label>
+                <button class="add_to_cart" data-no="3" data-hash_rate="5000" data-amout="5">Add to Cart</button>
+            </nav>
+
+    </div>
+
+    <div class="order_page">
+
+        <table border="1" cellpadding="30px">
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Kh/s</th>
+                    <th>Months</th>
+                    <th>Price</th>
+                    <th>Qty</th>
+                    <th>Amout</th>
+                </tr>
+            </thead>
+
+            <tbody id="priceTable">
+                
+            </tbody>
+
+            <tfoot>
+                <td colspan="5">Total</td>
+                <td id="total_amout"></td>
+            </tfoot>
+        </table>
+
+        <br><br>
+
+        <button id="order_now"><label for="holo-check">Order</label></button>
+
+    </div>
+
+    <script src="jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
